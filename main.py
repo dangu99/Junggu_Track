@@ -198,7 +198,7 @@ class InstallTrack(webapp2.RequestHandler):
 
         # Postback
         if junggutid:
-            postback = 'https://www.mobileitmedia.in/tl.php?s2s&transid=%(1)s' % {"1" : junggutid}
+            postback = 'https://adcolony.go2cloud.org/aff_lsr?transaction_id=%(1)s' % {"1" : junggutid}
         else:
             postback = 'https://cpa.adcolony.com/on_user_action?api_key=75fPJmPa5MaW8h3DFjpFeGG9n8atxFv4&product_id=%(1)s&raw_advertising_id=%(2)s&google_ad_id=%(3)s' % {"1" : guestbook_name, "2" : idfa, "3" : gaid}
 
